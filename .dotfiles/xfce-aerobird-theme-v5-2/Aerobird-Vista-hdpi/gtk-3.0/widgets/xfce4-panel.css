@@ -1,0 +1,28 @@
+/*XFCE Panel*/
+.xfce4-panel button, #sn-button, #indicator-button {
+    color: #fff;
+    -gtk-icon-shadow: 1px 1px #343434;
+}
+
+.xfce4-panel label {
+    color: #fff;
+}
+
+.xfce4-panel.background {
+background-image: linear-gradient(to bottom, mix(#888888, transparent, 0.25), mix(#656565, transparent, 0.25) 50%, mix(#404040, transparent, 0.25) 51%, mix(#404040, transparent, 0.25) 97%, mix(#202020, transparent, 0.25)); background-color: mix(#000000, transparent, 0.8);
+    border: none;
+    text-shadow: 1px 1px #343434;
+box-shadow: inset 0 1px mix(#b2b2b2, transparent, 0.125)
+}
+
+
+.xfce4-panel#XfcePanelWindow {
+  border-top-right-radius: 23px; 
+  border-top-right-radius: 0;
+  color: #DDD; /*separator color and workspace preview outline color*/
+}
+
+/* in-panel progress bars */
+.xfce4-panel progressbar {
+	min-width: 6px;
+}

@@ -1,0 +1,34 @@
+decoration {
+    border-radius: 6px 6px 0 0;
+    border-width: 0px;
+    box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px @aero-outline;
+    margin: 10px; 
+}
+
+.background .titlebar {
+	background-image: linear-gradient(to bottom, @aero-dark, @aero-base 50%, @aero-base 51%, mix(@aero-light, @aero-base, 0.60) 97%, @aero-light 98%); /*special-ref1*/
+    border-bottom: 1px solid mix(#000000, @aero-dark-i, 0.5);
+    border-top: 1px solid #ffffff; /*special-ref3*/
+    border-left: 1px solid #ffffff; /*special-ref4*/
+    border-right: 1px solid @aero-glow;
+color: #ffffff;
+    border-radius: 6px 6px 0 0;
+}
+
+.titlebar:backdrop {
+    background-image: linear-gradient(to bottom, mix(#000000, @aero-dark-i, 0.85), @aero-dark-i); /*special-ref2*/
+    border-bottom: 1px solid mix(#000000, @aero-dark-i, 0.5);
+    border-top: 1px solid @aero-light-i;
+    border-left: 1px solid @aero-light-i;
+    border-right: 1px solid @aero-light-i;
+color: #ffffff;
+}
+
+.background.tiled .titlebar, .background.tiled-top .titlebar, .background.tiled-right .titlebar, .background.tiled-bottom .titlebar, .background.tiled-left .titlebar, .background.maximized .titlebar, .background.solid-csd .titlebar {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized), window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized) > decoration, window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized) > decoration-overlay {
+    border-radius: 6px;
+}

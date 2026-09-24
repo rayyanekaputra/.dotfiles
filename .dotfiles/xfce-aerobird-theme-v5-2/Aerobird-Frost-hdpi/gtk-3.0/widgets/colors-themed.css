@@ -1,0 +1,14 @@
+/*window glow color*/
+@define-color aero-glow #3fcef2;
+
+/*active window color*/
+@define-color aero-base #e3e3e3;
+@define-color aero-dark #c4c4c5;
+@define-color aero-light #f1f1f1;
+@define-color aero-outline #343434;
+
+/*inactive window color*/
+@define-color aero-base-i #f3f3f3;
+@define-color aero-dark-i #f6f6f6;
+@define-color aero-light-i #ffffff;
+@define-color aero-outline-i #343434;
